@@ -13,3 +13,7 @@ function startGame(e) {
     controller.view();
 	}
 }
+ $(document).mousemove(function(e){
+      
+      mouseX = e.pageX;
+      mouseY = e.pageY;
