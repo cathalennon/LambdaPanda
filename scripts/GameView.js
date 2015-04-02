@@ -1,3 +1,4 @@
+//all access to HTML elements here
 function GameView() {
 
 }
