@@ -8,5 +8,8 @@ function startGame(e) {
 	if(code == 13) {
 		$('#gamebox p').text("You can start!!!");
 		//use the controller function here to start game
+
+    controller = new controller();
+    controller.view();
 	}
 }
