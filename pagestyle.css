@@ -32,10 +32,15 @@ h1 {
   border: 2px solid black;
   display: inline-block;
   padding: 10px;
-  max-width: 70px;
+  min-width: 60px;
   height: 30px;
   background-color: firebrick;
   opacity: 0.5;
 }
 
-
+.follower {
+  background-color: red;
+  opacity: 0.4;
+  width: 75px;
+  height: 75px;
+}
