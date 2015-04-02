@@ -1,1 +1,24 @@
-pagestyle.css
+h1 {
+  text-align: center;
+}
+
+#gamebox{
+  text-align: center;
+}
+
+#timer {
+  font-size: 30px;
+  position: absolute;
+  border-radius: 5px;
+  top: 30px;
+  right: 50px;
+  border: 2px solid black;
+  display: inline-block;
+  padding: 10px;
+  max-width: 70px;
+  height: 30px;
+  background-color: firebrick;
+  opacity: 0.5;
+}
+
+
