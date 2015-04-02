@@ -2,19 +2,17 @@
 
 var gameController = new GameController();
 
-$(document).ready(function(e){
+$(document).ready(function(){
+
 	$(document).keyup(function(event){
 		var code = event.keyCode || event.which;
-		if(code == 13) {
+		if (code === 13) {
 			gameController.startGame();
 		}
 	});
 
+	$(document).mousemove(function(e){
+		gameController.saveCursor(e.pageX, e.pageY);
+	});
 
-
- $(document).mousemove(function(e){
-      
-    gameController.saveCursor(e.pageX, e.pageY);
-
-  });
 });
