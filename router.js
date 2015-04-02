@@ -1,10 +1,15 @@
+//all event Listeners shold be here
 $(document).ready(function(e){
-	var gameController = new GameController();
 	$(document).keyup(function(event){
-		var code = event.keyCode || event.which;
-		if(code == 13) {
-			gameController.startGame();
-		}
-	});
+	startGame(event);
 });
-
+});
+function startGame(e) {
+	 var code = e.keyCode || e.which;
+	if(code == 13) {
+		$('#gamebox p').text("You can start!!!");
+		//use the controller function here to start game
+    controller = new controller();
+    controller.view();
+	}
+}
