@@ -4,7 +4,8 @@ mouseY = 0;
 function follower(imgUrl){
 
     this.img = imgUrl; 
-
+    mousemove();
+    
 }
 
   

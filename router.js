@@ -1,19 +1,17 @@
 $(document).ready(function(e){
+	var gameController = new GameController();
 	$(document).keyup(function(event){
-	startGame(event);
-});
-});
-function startGame(e) {
-	 var code = e.keyCode || e.which;
-	if(code == 13) {
-		$('#gamebox p').text("You can start!!!");
-		//use the controller function here to start game
+		var code = event.keyCode || event.which;
+		if(code == 13) {
+			gameController.startGame();
+		}
+	});
 
-    controller = new controller();
-    controller.view();
-	}
-}
  $(document).mousemove(function(e){
       
-      mouseX = e.pageX;
-      mouseY = e.pageY;
+    gameController.saveCursor(e.pageX, e.pageY);
+
+  });
+});
+
+
