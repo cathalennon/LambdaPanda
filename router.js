@@ -3,11 +3,8 @@
 var gameController = new GameController();
 
 $(document).ready(function(e){
-	$(document).keyup(function(event){
-		var code = event.keyCode || event.which;
-		if(code == 13) {
+	$('#startBtn').click(function(event){	
 			gameController.startGame();
-		}
 	});
 
 

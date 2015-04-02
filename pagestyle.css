@@ -1,9 +1,26 @@
+body {
+  background-color: black;
+}
+
 h1 {
   text-align: center;
+  color: grey;
+}
+
+#startBtn {
+  font-size: 20px;
+  width: 120px;
+  border: 2px solid black;
+  margin: 180px auto;
+  padding: 10px;
 }
 
 #gamebox{
+  background-color: white;
+  margin: 50px 0px; 
   text-align: center;
+  border: 2px dashed grey;
+  min-height: 500px;
 }
 
 #timer {
