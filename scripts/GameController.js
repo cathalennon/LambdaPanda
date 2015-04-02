@@ -1,3 +1,5 @@
+
+
 function GameController () {
 	this.game = new GameModel();
 	this.gameView = new GameView();
@@ -16,3 +18,4 @@ GameController.prototype.startTimer = function() {
 	}.bind(this),
 	100);
 };
+
