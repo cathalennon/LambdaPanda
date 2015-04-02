@@ -5,8 +5,14 @@ function GameController() {
 };
 GameController.prototype.startGame = function() {
 	this.gameView.renderWelcome();
+
 	this.startTimer();	
 };
+
+	this.startTimer();
+	this.startChase();
+}
+
 
 GameController.prototype.startTimer = function() {
 	setInterval(function(){
@@ -19,9 +25,14 @@ GameController.prototype.startTimer = function() {
 	100);
 };
 
-//GameController.prototype.startSpawner = function() {
-	//every 30? seconds
-//	this.game.elapsedTime += ((Math.random() * 15))
-			// create a new follower using the spawner object
-			// tell the game view to render the follower
-//
+GameController.prototype.saveCursor = function(x,y) {
+
+	this.game.cursorPositionX = x;
+	this.game.cursorPositionY = y;
+
+}
+GameController.prototype.startChase = function(){
+
+	
+}
+
