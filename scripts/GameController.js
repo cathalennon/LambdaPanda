@@ -11,12 +11,12 @@ GameController.prototype.startGame = function() {
 
 GameController.prototype.startTimer = function() {
 	setInterval(function(){
-      	this.game.elapsedTime += 0.1
-      	this.gameView.renderTimer(this.game);
-      	if (Math.random() * 25 < 1){
-      		this.spawner.createFollower();
-      	}
-  	}.bind(this), 100);
+            this.game.elapsedTime += 0.1;
+            this.gameView.renderTimer(this.game);
+            if (Math.random() * 25 < 1){
+            this.spawner.createFollower();
+            }
+      }.bind(this), 100);
 };
 
 GameController.prototype.saveCursor = function(x,y) {
