@@ -2,13 +2,9 @@
 
 var gameController = new GameController();
 
-$(document).ready(function(){
-
-	$(document).keyup(function(event){
-		var code = event.keyCode || event.which;
-		if (code === 13) {
+$(document).ready(function(e){
+	$('#startBtn').click(function(){	
 			gameController.startGame();
-		}
 	});
 
 	$(document).mousemove(function(e){
