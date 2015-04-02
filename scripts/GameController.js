@@ -1,5 +1,3 @@
-
-
 function GameController () {
 	this.game = new GameModel();
 	this.gameView = new GameView();
@@ -9,6 +7,7 @@ GameController.prototype.startGame = function() {
 		
 	this.gameView.renderWelcome();
 	this.startTimer();
+	this.startChase();
 }
 
 GameController.prototype.startTimer = function() {
@@ -19,3 +18,13 @@ GameController.prototype.startTimer = function() {
 	100);
 };
 
+GameController.prototype.saveCursor = function(x,y) {
+
+	this.game.cursorPositionX = x;
+	this.game.cursorPositionY = y;
+
+}
+GameController.prototype.startChase = function(){
+
+	
+}
