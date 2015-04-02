@@ -5,14 +5,9 @@ function GameController() {
 };
 GameController.prototype.startGame = function() {
 	this.gameView.renderWelcome();
-
+	this.startChase();
 	this.startTimer();	
 };
-
-	this.startTimer();
-	this.startChase();
-}
-
 
 GameController.prototype.startTimer = function() {
 	setInterval(function(){
