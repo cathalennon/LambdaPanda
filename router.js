@@ -3,15 +3,12 @@
 var gameController = new GameController();
 
 $(document).ready(function(e){
-	$('#startBtn').click(function(event){	
+	$('#startBtn').click(function(){	
 			gameController.startGame();
 	});
 
+	$(document).mousemove(function(e){
+		gameController.saveCursor(e.pageX, e.pageY);
+	});
 
-
- $(document).mousemove(function(e){
-      
-    gameController.saveCursor(e.pageX, e.pageY);
-
-  });
 });
