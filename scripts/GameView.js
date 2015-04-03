@@ -20,3 +20,7 @@ GameView.prototype.renderFollower = function(follower) {
 	$('#gamebox').append(follower);
 
 };
+
+GameView.prototype.renderScore = function (game) {
+	$('#score').html(game.score.toFixed(0))
+};
