@@ -36,10 +36,14 @@ h1 {
   border: 2px solid black;
   display: inline-block;
   padding: 10px;
-  max-width: 70px;
+  min-width: 60px;
   height: 30px;
   background-color: firebrick;
   opacity: 0.5;
 }
 
-
+.follower img{
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
