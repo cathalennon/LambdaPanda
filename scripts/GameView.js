@@ -15,7 +15,6 @@ GameView.prototype.renderTimer = function(game) {
 
 
 GameView.prototype.renderFollower = function(follower) {
-	console.log("Hello there, I need to eat")
 
 	$('#gamebox').append(follower);
 

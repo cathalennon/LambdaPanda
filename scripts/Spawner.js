@@ -4,7 +4,7 @@ function Spawner(gameView){
 
 
 Spawner.prototype.createFollower = function(){
-	var follower = new Follower('../Assets/test.png');
+	var follower = new Follower();
 	this.gameView.renderFollower(follower.element);
 	if (Math.random() * 10 < 1){
 	//$('.soundId').trigger('play');

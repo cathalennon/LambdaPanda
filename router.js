@@ -15,6 +15,7 @@ $(document).ready(function(e){
 		gameController.saveCursor(e.pageX, e.pageY);
 		mouseX = e.pageX;
 		mouseY = e.pageY;
+		gameController.checkCollision(mouseX, mouseY);
 	});
 
 	var updatePositionloop = setInterval(function() {

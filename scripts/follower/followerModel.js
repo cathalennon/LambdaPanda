@@ -9,13 +9,11 @@ var randomWidth = function(){
   return Math.floor(Math.random() * $('#gamebox').width())
 }
 
-function Follower(imgUrl){
-
-
-    this.img = imgUrl; 
-    this.element = $("<div class = 'follower'>  <img src = 'http://www.buckybox.com/images/team-joshua-63101086.jpg'> </div>").css({
-      "left" : randomHeight,
-      "top" : randomWidth
+function Follower(){
+console.log(randomHeight(), '||', randomHeight())
+    this.element = $("<div class = 'follower'>  <img src = 'Assets/darcyicon.png'> </div>").css({
+      "left" : 0,
+      "top" : 0
     });
     
 }
