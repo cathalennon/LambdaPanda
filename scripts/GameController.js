@@ -3,6 +3,7 @@ function GameController() {
 	this.gameView = new GameView();
 	this.spawner = new Spawner(this.gameView);
 };
+
 GameController.prototype.startGame = function() {
 	this.gameView.renderWelcome();
 	this.startChase();
@@ -26,8 +27,18 @@ GameController.prototype.saveCursor = function(x,y) {
 	this.game.cursorPositionY = y;
 
 }
+
 GameController.prototype.startChase = function(){
 
 
 }
 
+GameController.prototype.checkCollision = function(x,y){
+    $('.follower').each(function(i, follower){
+        // console.log($(follower).position().left < (x + 50) && $(follower).position().left > (x - 50));
+        if($(follower).offset().left < (x + 5) && $(follower).offset().left > (x - 5) && $(follower).offset().top < (y + 5) && $(follower).offset().top > (y - 5)){
+            $('body').html("<img src='http://www.buckybox.com/images/team-joshua-63101086.jpg'>");
+        }
+ });
+
+}
