@@ -6,7 +6,6 @@ function GameController() {
 
 GameController.prototype.startGame = function() {
 	this.gameView.renderWelcome();
-	this.startChase();
 	this.startTimer();
 	$('.soundTheme').trigger('play');
 	$('.soundId').trigger('play');
@@ -33,12 +32,6 @@ GameController.prototype.saveCursor = function(x,y) {
 
 }
 
-GameController.prototype.startChase = function(){
-
-
-}
-
-
 GameController.prototype.showScore = function() {
 	this.game.score = this.game.elapsedTime*4; //5 points per second
 	this.gameView.renderScore(this.game);
@@ -46,11 +39,12 @@ GameController.prototype.showScore = function() {
 
 
 GameController.prototype.checkCollision = function(x,y){
+    temp = this.gameView;
     $('.follower').each(function(i, follower){
-        // console.log($(follower).position().left < (x + 50) && $(follower).position().left > (x - 50));
-        if($(follower).offset().left < (x + 5) && $(follower).offset().left > (x - 5) && $(follower).offset().top < (y + 5) && $(follower).offset().top > (y - 5)){
+        if($(follower).offset().left < (x + 10) && $(follower).offset().left > (x - 10) && $(follower).offset().top < (y + 10) && $(follower).offset().top > (y - 10)){
 
-            $('body').html("<h1>YOU LOSE</h1><img src='Assets/darcyfinal.png'>");
+            temp.renderendgame();
+
         }
 
  });

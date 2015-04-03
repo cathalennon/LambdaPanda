@@ -10,7 +10,6 @@ var randomWidth = function(){
 }
 
 function Follower(){
-console.log(randomHeight(), '||', randomHeight())
     this.element = $("<div class = 'follower'>  <img src = 'Assets/darcyicon.png'> </div>").css({
       "left" : 0,
       "top" : 0

@@ -19,7 +19,6 @@ $(document).ready(function(e){
 	});
 
 	var updatePositionloop = setInterval(function() {
-		console.log("im looping")
 		$('.follower').each(function(i, follower){
 			xp = $(follower).position().left
 			yp = $(follower).position().top
