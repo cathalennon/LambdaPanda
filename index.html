@@ -5,7 +5,7 @@
   <link rel="stylesheet" type="text/css" href="./pagestyle.css">
   <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-   <script src="./scripts/Follower/FollowerModel.js"></script>
+  <script src="./scripts/Follower/FollowerModel.js"></script>
   <script src="./scripts/Spawner.js"></script>
   <script src="./scripts/GameModel.js"></script>
   <script src="./scripts/GameView.js"></script>
@@ -16,19 +16,25 @@
 <body>
  	<h1>ESCAPE THE OVERLORD</h1>
 
+
+ 	<div id = "gamebox"> <!--Put Game stuff inside this div-->
+		<div id = "startBtn">Click here to start the Game.</div>
+        <audio class ="soundPsycho" src="./Media/psycho.mp3">
+        <audio class ="soundTheme" src="./Media/escape.mp3">
+        <audio class ="soundEvil" src="./Media/survivor1.wav">
+ 	
+
+ <audio class ="soundId" src="./Media/godz4.wav">
+  </div> <!--end of gamebox-->
+
+
   <p class = "box-title score" >Score:</p>
   <p class = "box-title timer">Time:</p>
   <div id ="score"></div>
   <div id="timer"></div>
 
- 	<div id = "gamebox"> <!--Put Game stuff inside this div-->
-	<div id = "startBtn">Click here to start the Game.</div>
-
 
  	
-
-  </div> <!--end of gamebox-->
-
 
 
 </body>
