@@ -17,13 +17,6 @@ GameView.prototype.renderTimer = function(game) {
 GameView.prototype.renderFollower = function(follower) {
 	console.log("Hello there, I need to eat")
 
-	$('#gamebox').append("
-
-		<div class = 'follower'>
-
-			<img src = '" + follower.imgUrl +  "'>
-
-		</div>"
-	);
+	$('#gamebox').append(follower);
 
 };

@@ -1,25 +1,21 @@
 mouseX = 0;
 mouseY = 0;
 
-function follower(imgUrl){
-
-    this.img = imgUrl; 
-    mousemove();
-    
+var randomHeight = function(){
+  return Math.floor(Math.random() * $('#gamebox').height())
 }
 
-  
- 
+var randomWidth = function(){
+  return Math.floor(Math.random() * $('#gamebox').width())
+}
 
-   // cache the selector
-   var follower = $(".follower");
-   var xp = 0, yp = 0;
-   var loop = setInterval(function(){
-       // change number to alter damping higher is slower
-       xp += (mouseX - xp) / 25; // speed of follower
-       yp += (mouseY - yp) / 25;
-       follower.css({left:xp, top:yp});
-
-   }, 30);
+function Follower(imgUrl){
 
 
+    this.img = imgUrl; 
+    this.element = $("<div class = 'follower'>  <img src = 'http://www.buckybox.com/images/team-joshua-63101086.jpg'> </div>").css({
+      "left" : randomHeight,
+      "top" : randomWidth
+    });
+    
+}
