@@ -1,4 +1,10 @@
+html {
+  position: relative;
+  height: 100%;
+}
+
 body {
+  height: 100%;
   background-color: black;
 }
 
@@ -39,7 +45,8 @@ h1 {
   margin: 50px 0px; 
   text-align: center;
   border: 2px dashed grey;
-  min-height: 500px;
+  height: 500px;
+  max-height: 500px;
 }
 
 #timer {
