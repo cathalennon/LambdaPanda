@@ -15,7 +15,8 @@ GameController.prototype.startGame = function() {
 GameController.prototype.startTimer = function() {
 	setInterval(function(){
             this.game.elapsedTime += 0.1;
-            this.gameView.renderTimer(this.game);          
+            this.gameView.renderTimer(this.game);
+            this.showScore();
             if (Math.random() * 5 < 1){
             this.spawner.createFollower();                     
             }
@@ -33,5 +34,10 @@ GameController.prototype.saveCursor = function(x,y) {
 GameController.prototype.startChase = function(){
 
 
+}
+
+GameController.prototype.showScore = function() {
+	this.game.score = this.game.elapsedTime*4; //5 points per second
+	this.gameView.renderScore(this.game);
 }
 
