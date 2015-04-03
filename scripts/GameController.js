@@ -50,7 +50,7 @@ GameController.prototype.checkCollision = function(x,y){
         // console.log($(follower).position().left < (x + 50) && $(follower).position().left > (x - 50));
         if($(follower).offset().left < (x + 5) && $(follower).offset().left > (x - 5) && $(follower).offset().top < (y + 5) && $(follower).offset().top > (y - 5)){
 
-            $('body').html("<h1>YOU LOSE</h1><img src='http://www.buckybox.com/images/team-joshua-63101086.jpg'>");
+            $('body').html("<h1>YOU LOSE</h1><img src='Assets/darcyfinal.png'>");
         }
 
  });
