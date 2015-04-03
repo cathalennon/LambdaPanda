@@ -5,6 +5,7 @@ var gameController = new GameController();
 $(document).ready(function(e){
 	$('#startBtn').click(function(){	
 			gameController.startGame();
+			$(this).remove();
 	});
 	var mouseX = 0;
 	var mouseY = 0;
