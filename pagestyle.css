@@ -2,6 +2,10 @@ body {
   background-color: black;
 }
 
+.follower {
+  position: absolute;
+}
+
 h1 {
   text-align: center;
   color: grey;

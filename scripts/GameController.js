@@ -13,8 +13,9 @@ GameController.prototype.startTimer = function() {
 	setInterval(function(){
             this.game.elapsedTime += 0.1;
             this.gameView.renderTimer(this.game);
-            if (Math.random() * 25 < 1){
+            if (Math.random() * 5 < 1){
             this.spawner.createFollower();
+            
             }
       }.bind(this), 100);
 };
