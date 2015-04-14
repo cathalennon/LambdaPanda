@@ -46,8 +46,6 @@ GameController.prototype.checkCollision = function(x,y){
             temp.renderendgame();
 
         }
-
- });
-
+ 	});
 }
 
